@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Carros - Ex03 API Spark</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro e Gerenciamento de Carros</h1>
+
+        <section id="form-section">
+            <h2>Cadastrar Novo Carro</h2>
+            <form id="carro-form">
+                <input type="hidden" id="carro-id" value="">
+                
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+
+                <label for="cor">Cor:</label>
+                <input type="text" id="cor" required>
+
+                <label for="ano">Ano:</label>
+                <input type="number" id="ano" required>
+
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca">
+                
+                <label for="linha">Linha:</label>
+                <input type="text" id="linha">
+
+                <button type="submit" id="submit-button">Cadastrar</button>
+                <button type="button" id="cancel-button" style="display:none;">Cancelar Edição</button>
+            </form>
+        </section>
+
+        <section id="search-section">
+            <h2>Consultar Carro por ID</h2>
+            <input type="number" id="search-id" placeholder="Digite o ID do carro">
+            <button id="search-button">Buscar</button>
+
+            <div id="search-result"></div>
+        </section>
+
+        <section id="list-section">
+            <h2>Carros Cadastrados</h2>
+            <table id="carro-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Marca</th>
+                        <th>Ano</th>
+                        <th>Cor</th>
+                        <th>Linha</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

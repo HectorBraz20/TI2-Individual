@@ -1,0 +1,189 @@
+/* RESET BÁSICO */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    color: #333;
+    padding: 20px;
+}
+
+/* CONTAINER PRINCIPAL */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* TÍTULOS */
+h1, h2 {
+    margin-bottom: 20px;
+    color: #00796b;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* FORMULÁRIO */
+#form-section, #search-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #f1f8f8;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+
+#carro-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+#carro-form input[type="text"],
+#carro-form input[type="number"],
+#search-section input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.2s;
+}
+
+#carro-form input:focus,
+#search-section input:focus {
+    border-color: #00796b;
+    outline: none;
+}
+
+/* BOTÕES */
+button {
+    padding: 12px 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.1s;
+}
+
+#submit-button {
+    background-color: #00796b;
+    color: #fff;
+}
+
+#submit-button:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+
+#cancel-button {
+    background-color: #e53935;
+    color: #fff;
+}
+
+#cancel-button:hover {
+    background-color: #b71c1c;
+    transform: scale(1.05);
+}
+
+#search-button {
+    background-color: #0288d1;
+    color: #fff;
+}
+
+#search-button:hover {
+    background-color: #01579b;
+    transform: scale(1.05);
+}
+
+/* RESULTADO DA BUSCA */
+#search-result {
+    margin-top: 15px;
+    padding: 15px;
+    background: #e0f2f1;
+    border-radius: 8px;
+}
+
+/* TABELA */
+#list-section {
+    overflow-x: auto;
+}
+
+#carro-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+#carro-table th, #carro-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+#carro-table th {
+    background-color: #00796b;
+    color: #fff;
+    font-weight: 600;
+}
+
+#carro-table tr:nth-child(even) {
+    background-color: #f1f8f8;
+}
+
+#carro-table tr:hover {
+    background-color: #c8e6c9;
+}
+
+/* BOTÕES DE AÇÃO NA TABELA */
+#carro-table button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    margin-right: 5px;
+}
+
+#carro-table button:nth-child(1) {
+    background-color: #0288d1;
+    color: #fff;
+}
+
+#carro-table button:nth-child(1):hover {
+    background-color: #01579b;
+}
+
+#carro-table button:nth-child(2) {
+    background-color: #e53935;
+    color: #fff;
+}
+
+#carro-table button:nth-child(2):hover {
+    background-color: #b71c1c;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    #carro-form input[type="text"],
+    #carro-form input[type="number"],
+    #search-section input {
+        font-size: 0.9rem;
+    }
+
+    #carro-table th, #carro-table td {
+        font-size: 0.85rem;
+        padding: 10px 8px;
+    }
+}
